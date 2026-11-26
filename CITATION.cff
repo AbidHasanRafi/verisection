@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use VeriSection, please cite the software and the accompanying paper."
+title: "VeriSection: an open research workstation for auditing image evidence and descriptor reliability in digital pathology"
+type: software
+version: 0.1.0.dev0
+license: MIT
+repository-code: "https://github.com/abidhasanrafi/verisection"
+authors:
+  - family-names: Rafi
+    given-names: Md. Abid Hasan
+    orcid: "https://orcid.org/0000-0002-3628-4207"
+    affiliation: "Department of Electronics and Communication Engineering, Hajee Mohammad Danesh Science and Technology University, Dinajpur, Bangladesh"
+  - family-names: Johora
+    given-names: Mst. Fatematuj
+    orcid: "https://orcid.org/0009-0005-3321-8377"
+    affiliation: "Department of Electronics and Communication Engineering, Hajee Mohammad Danesh Science and Technology University, Dinajpur, Bangladesh"
+  - family-names: Bhowmik
+    given-names: Pankaj
+    orcid: "https://orcid.org/0000-0003-2296-5308"
+    affiliation: "Department of Computer Science and Engineering, Hajee Mohammad Danesh Science and Technology University, Dinajpur, Bangladesh"
+keywords:
+  - digital pathology
+  - image quality
+  - stain
+  - texture descriptors
+  - provenance
+  - explainable AI
+preferred-citation:
+  type: article
+  title: "VeriSection: an open research workstation for auditing image evidence and descriptor reliability in digital pathology"
+  journal: "PLOS Digital Health"
+  year: 2026
+  status: submitted
+  authors:
+    - family-names: Rafi
+      given-names: Md. Abid Hasan
+    - family-names: Johora
+      given-names: Mst. Fatematuj
+    - family-names: Bhowmik
+      given-names: Pankaj

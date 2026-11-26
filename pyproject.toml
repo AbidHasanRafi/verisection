@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verisection"
+version = "0.1.0.dev0"
+description = "Open research workstation for auditing image evidence and descriptor reliability in digital pathology: provenance, stain and quality audit, texture stability, explanation and evidence-gated decisions (research use only)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Md. Abid Hasan Rafi" },
+    { name = "Mst. Fatematuj Johora" },
+    { name = "Pankaj Bhowmik" },
+]
+keywords = ["digital pathology", "histology", "image quality", "stain", "texture", "provenance", "explainable AI"]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "scikit-image>=0.22",
+    "scikit-learn>=1.3",
+    "pandas>=2.0",
+    "pydantic>=2.5",
+    "typer>=0.12",
+]
+
+[project.optional-dependencies]
+viz = ["matplotlib>=3.8"]
+ui = ["streamlit>=1.30", "plotly>=5.18"]
+explain = ["shap>=0.44"]
+test = ["pytest>=8"]
+
+[project.urls]
+Repository = "https://github.com/abidhasanrafi/verisection"
+
+[project.scripts]
+verisection = "verisection.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B905", "UP007", "UP037", "B008"]
